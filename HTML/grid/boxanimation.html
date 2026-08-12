@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+        }
+        .b1{
+            background-color: aqua;
+            animation:scalebox 3s ease infinite alternate;
+        }
+        @keyframes scalebox{
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1.5s);
+            }
+        }
+        .b2{
+            background-color: chartreuse;
+            animation: move 2s ease-in-out infinite alternate;
+        }
+        @keyframes move{
+            from{
+                transform: translatex(0px);
+
+            }
+            to{
+                transform: translateX(100px);
+            }
+        }
+        .b3{
+            background-color: blue;
+            animation: rotate 2s infinite alternate;
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .b4{
+            background-color: darkorchid;
+            animation: color 2s infinite alternate;
+        }
+        @keyframes color{
+            from{
+                background-color: brown;
+            }
+            to{
+                background-color: chocolate;
+            }
+
+        }
+        .b5{
+            background-color: bisque;
+            animation: bounce 2s infinite alternate;
+        }
+        @keyframes bounce{
+            0%, 100% {transform: translateY(0px)}
+            50%{transform: translateY(-15px);}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+        <div class="box b4"></div>
+        <div class="box b5"></div>
+    </div>
+</body>
+</html>

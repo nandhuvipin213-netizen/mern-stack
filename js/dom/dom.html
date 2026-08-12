@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">hii</h2>
+    <h1 id="inn">come</h1>
+    <button onclick="clicks()">click</button>
+
+    <h3 class="one">pro</h3>
+    <h4 class="one">mini</h4>
+    <p>high</p>
+    <p>one</p>
+    <script>
+        let title= document.getElementById('title')
+        console.log(title)
+        function clicks(){
+            document.getElementById("inn").innerHTML='coming'
+             document.getElementById("inn").style.color="blue"
+             document.getElementById("inn").style.fontSize="90px"
+             document.getElementById("inn").style.backgroundColor="red"
+        } 
+
+        document.getElementsByClassName("one")[0].innerHTML="proworld"
+        document.getElementsByClassName("one")[1].innerHTML="miniworld"
+        document.getElementsByTagName("p")[0].innerHTML='hight'
+        document.querySelector(".one").style.color="green"
+        document.querySelector(".one").style.fontSize="20px"
+        document.querySelectorAll(".one")
+        document.getElementsByTagName("p")[1].innerHTML="<p>ones</p>"
+        document.getElementsByTagName("p")[1].innerText="<b>two</b>"
+        document.getElementsByTagName("p")
+
+
+
+        
+
+
+        
+    </script>
+
+</body>
+</html>

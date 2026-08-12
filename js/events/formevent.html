@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <h1>Form Event dom</h1>
+
+        <label>Name</label>
+        <input type="text" id="name" required /> <br>
+
+        <button type="submit">submit</button><br>
+        <button type="reset">reset</button>
+    </form>
+
+    <script>
+        let input=document.getElementById("name")
+        form.addEventListener("submit",function(event){
+            event.preventDefault()
+            console.log("form submitted");
+            
+        })
+        input.addEventListener("input",function(event){
+            console.log("Typing",input.value);
+            
+        })
+        input.addEventListener("change",function(event){
+            console.log("change",input.value);
+            
+        })
+        input.addEventListener("focus",function(event){
+            console.log("input focused");
+            
+        })
+        input.addEventListener("blur",function(event){
+            console.log("input lost focus");
+            
+        })
+        form.addEventListener("reset",function(){
+            console.log("form reset");
+            
+        })
+        input.addEventListener("invalid",function(){
+            console.log("inavlid input");
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function task1(){
+            return new Promise((resolve, reject)=>{
+                setTimeout(() => {
+                    resolve("task1 exicuted")
+                },);
+            })
+        }
+
+        function task2(){
+            return new Promise((resolve, reject)=>{
+                resolve("task2 exicuted")
+            })
+        }
+        function task3(){
+            return new Promise((resolve, reject)=>{
+                resolve("task3 exicuted")
+            })
+        }
+        task1()
+        .then(()=>task2)
+        .then(()=>task3)
+        .then(()=>console.log("completed"))
+
+        // task1()
+        // .then((res)=>{
+        //     console.log(res)
+        //     return task2()
+        // })
+        // .then((res)=>{
+        //     console.log(res)
+        //     return task3()
+        // })
+        // .then((res)=>{
+        //     console.log(res)
+        //     console.log("copleted")
+        // })
+        // .catch(error=>console.log("error")
+        // )
+
+        //promiseall
+        Promise.all([task1(),task2(),task3()])
+        .then((res)=>console.log(res))
+        .then(res=>console.log("done"))
+        .catch(error=>console.log('error'))
+
+
+        let p1= new Promise(resolve=>
+            setTimeout(()=>resolve("firs"),3000)
+        )
+        let p2= new Promise(resolve=>
+            setTimeout(()=>resolve("second"),4000)
+        )
+        Promise.race([p1,p2])
+        .then(result=>{
+            console.log(result)
+        })
+    </script>
+</body>
+</html>

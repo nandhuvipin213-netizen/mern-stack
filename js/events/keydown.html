@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 130px;
+            height: 130px;
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" tabindex="0">
+        🤞
+    </div>
+
+
+    <script>
+        let text = document.getElementById("box")
+        text.addEventListener("keydown", function (event) {
+            text.textContent = "✌"
+            text.style.backgroundColor = "blue"
+            console.log("ghj", text);
+
+        })
+
+        text.addEventListener("keyup", function (event) {
+            text.textContent = "✌"
+            text.style.backgroundColor = "yellow"
+        })
+    </script>
+</body>
+
+</html>

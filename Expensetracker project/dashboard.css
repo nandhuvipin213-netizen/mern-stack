@@ -1,0 +1,38 @@
+ .main{
+    display: flex;
+    margin-top: 0;
+ }
+.rt nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aqua;
+    width: 969px;
+    height: 60px;
+    margin-top: 0;
+}
+.left{
+    background-color: royalblue;
+    height: 600px;
+}
+.left ul li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10%;
+}
+.Balance{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    background-color: azure;
+}
+.income{
+     border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    background-color: azure;
+}
+body{
+    margin: 0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-rows: 100px 1fr;
+            grid-template-columns: 100px 1fr;
+            grid-template-areas: "sidebar header"
+                                  "sidebar content";
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(21, 184, 32);
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: black;
+        }
+        .content{
+            grid-area: content;
+            background-color:white;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card{
+            background-color: darkkhaki;
+            width: 300px;
+            height: 150px;
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header"></div>
+        <div class="sidebar"></div>
+        <div class="content">
+            <div class="card">user</div>
+            <div class="card">orders</div>
+            <div class="card">revenue</div>
+            <div class="card">product</div>
+            <div class="card">reports</div>
+            <div class="card">message</div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: rgb(147, 147, 192);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <p id="idea"></p>
+    <h1 id="title"></h1>
+    <button onclick="change()">click</button>
+    <div id="one">
+        <p id="two">hloo</p>
+    </div>
+    <script>
+        let main=document.getElementById("title")
+        main.classList.add("add")
+        console.log(main)
+        main.classList.remove("add")
+        document.body.classList.add("red")
+        function change(){
+            document.body.classList.toggle("red")
+            if(document.body.classList.contains("red")){
+                console.log("dark mode")
+            }else{
+                console.log("light mode")
+            }
+
+        }
+
+
+        let heading=document.createElement("h5")
+        console.log(heading);
+        heading.textContent="mern stack"
+        document.getElementById("idea").appendChild(heading)
+        document.getElementById('idea').remove()
+
+        let parent=document.getElementById("one")
+        let child=document.getElementById("two")
+        parent.removeChild("child")
+
+
+
+        
+    </script>
+</body>
+</html>

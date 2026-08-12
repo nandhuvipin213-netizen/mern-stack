@@ -1,0 +1,26 @@
+.main{
+    background: linear-gradient(blue,violet);
+    width: 100%;
+    height: 500px;
+    padding-top: 70px;
+    
+}
+.sub{
+    background-color: white;
+    width: 60%;
+    height: 300px;
+    margin-left: 110px;
+    text-align: center;
+    border-radius: 15px;
+    
+    
+}
+footer{
+    border-left: 3px solid red;
+    background-color: bisque;
+    margin-left: 20px;
+
+}
+img{
+    margin-left: 110px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="getPokemon()">click</button>
+
+    <script>
+        async function getPokemon() {
+            try{
+                let response=await fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+                let user=await response.json()
+
+                document.getElementById("res").innerHTML=`${user.name}              
+                <img src="${user.sprites.back_default}" alt="${user.name}">`
+
+
+            }catch(error){
+                console.log("error");
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

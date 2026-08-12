@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //6
+        let text="hlooo"
+        let word="HAII"
+        document.write(text.toUpperCase())
+        document.write('<br>')
+        document.write(word.toLocaleLowerCase())
+        document.write('<br>')
+
+        //9
+        let words="negative energy"
+        document.write(words.replace("energy","energies"))
+        document.write('<br>')
+
+
+        //2
+        for(i=1;i<=30;i++){
+            if(i% 5==0)
+            continue;
+            document.write(i,'<br>')
+
+        }
+        document.write('<br>')
+
+         //3
+        let b="world full negative"
+        document.write(b.split(" ").length)
+        document.write('<br>')
+
+        
+
+        // //8
+        // let r=2002
+        // while(i=1){
+            
+
+        // }
+
+        // let fruit=["apple","orange","mango"]
+
+        //10
+        let count=0
+        for(let i=1;i<=3;i++){
+            for(let j=1;j<=3;j++){
+                if(j==2) break;
+                count++;
+            }
+        }document.write(count);
+        document.write("<br>")
+
+        //7
+        let array=["mango","lemon","apple"]
+        let arr=[]
+        for(i=array.length-1;i>=0;i--){
+            arr.push(array[i])
+        }document.write(arr)
+        console.log(arr);
+        document.write("<br>")
+        
+        
+         //2d sum
+        let array2=[
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ]
+        let sum=0
+        for(let i=0;i<array2.length;i++){
+            for(let j=0;j< array2[i].length;j++){
+                sum +=array2[i][j];
+            }
+        }document.write(sum)
+
+
+        
+    </script>
+</body>
+</html>

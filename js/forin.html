@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            name:"ann",
+            age:23
+        }
+        for(let key in student){
+            document.write(key,student[key],"<br>");
+        }
+        let number=[20,40,60]
+
+        for(let value in number){
+            document.write("for in",value,"<br>");
+        }
+
+        for(let num of number){
+            document.write(num,"<br>")
+        }
+
+
+        // let numbers=[1,2,3,4,5,6,7,8,9,10]
+        // for(let num of numbers){
+        //     if(num% 2==0){
+        //         document.write(num,"<br>")
+
+        //     }
+            
+
+        // }
+        // let sum=0
+        // for(let num of numbers){
+        //     sum=num+sum
+           
+
+        // } document.write(sum,"<br>")
+
+        
+        let numbers=[1,2,3,4,5,6,7,8,9,10]
+        for(let num of numbers){
+            if(num% 2!==0){
+                document.write(num,"<br>")
+
+            }
+            
+
+        }
+        let sum=0
+        
+
+
+        
+
+    </script>
+</body>
+</html>

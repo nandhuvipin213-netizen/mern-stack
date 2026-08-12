@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="use"></h1>
+    <button onclick="out()">click</button>
+    <p id="output"></p>
+
+    <script>
+        function fetchuser(){
+            return new Promise((resolve,reject)=>{
+                let success=true
+                setTimeout(() => {
+                    if(success){
+                        resolve({
+                            name: "naivin",
+                            age: 28,
+                            role: "developer"
+                            
+                        })
+                    }else{
+                        reject("failed")
+                    }
+                },2000);
+            })
+        }
+        async function out(){
+            let output=document.getElementById("output")
+            output.innerHTML="Loading..."
+        
+        try{
+            let user=await fetchuser();
+            output.innerHTML=`name ${user.name}
+                              Age${user.age}
+                              Role${user.role}`
+
+
+            
+        }catch(error){
+            output.innerHTML=error
+        }finally{
+            console.log("completed");
+            
+        }}
+    </script>
+    
+</body>
+</html>

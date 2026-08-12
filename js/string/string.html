@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let me="well"
+        let i="come"
+        let of="usin"
+        document.write("length",me.length);
+        document.write('<br>')
+        document.write(i[2]);
+        document.write(me.toUpperCase());
+        document.write(of.toLowerCase());
+        document.write('<br>')
+
+        let text="      hiii"
+        document.write(text,'<br>');
+        document.write('<br>')
+        document.write(text.trim());
+        console.log(text.trim(),);
+        document.write('<br>')
+
+        let tex3="my world in "
+        let text5="rules / world "
+        document.write("slice:",tex3.slice(0,8),'<br>');
+        document.write(text5.substring(0,8))
+
+        let te= "developing"
+        document.write(te.slice(-4));
+        document.write('<br>');
+
+        document.write(tex3.replace("in","in us"),'<br>')
+        document.write(text5.replaceAll("/" , ","))
+
+        document.write(tex3.includes("org"),'<br>')
+        document.write(text5.indexOf("l"),'<br>')
+        document.write(text5.lastIndexOf("d"))
+        document.write(tex3.startsWith("my"))
+        document.write(text5.endsWith("d"))
+
+        let text7="itsyou"
+        let text8="and"
+
+        document.write(text7.concat(" ",text8));
+        document.write(text7+text8,'<br>')
+
+        let my="nandu"
+        let reverse=""
+        for(i=my.length-1;i>=0;i--){
+            reverse+=my[i]
+        }document.write(reverse,'<br>')
+        if(my==reverse){
+            document.write("true")
+        }else{
+            document.write("failed",'<br>')
+        }
+
+        let fruit="apple/orange"
+        document.write(fruit.split("/"));
+        console.log(fruit.split("/"),)
+        document.write('<br>')
+
+        let str="hellooo"
+        document.write(str.repeat(2))
+        document.write('<br>')
+
+        let str1="helloo world"
+        document.write(str1.match(/ld/))
+        document.write('<br>')
+        document.write(str1.search("world"))
+
+        let word=["hloo","world","in"]
+        document.write(word.join(" "))
+        document.write('<br>')
+
+        let name="manu"
+        let role="developer"
+        let title=`${name} is an ${role}`
+        document.write(title,'<br>')
+
+        let words="hellooo"
+        document.write(words.split("").reverse().join(""))
+        document.write('<br>')
+
+        let sent="java is poverful java is super"
+        let wrd="java"
+        let b=sent.split(" ")
+        let count=0
+        for(i=0;i<=b.length;i++){
+            if(b[i]==wrd){
+                count++
+            }
+        }document.write(count)
+        document.write(`the ${wrd} is repeat ${count} times`,'<br>');
+
+        let d="javascript"
+        let s="a,e,i,o,u"
+        let j=d.split("")
+        let vowel=0
+        for(i=0;i<=j.length;i++){
+            if(j[i]=="a"||j[i]=="e"||j[i]=="i"||j[i]=="0"||j[i]=="u")
+            vowel++
+
+        }document.write(vowel,'<br>')
+
+        let m="java is most poverful"
+        let n=m.split(" ")
+        // document.write(m)
+        let long=""
+        // for(i=0;i<n.length;i++){
+        //     if(n[i].length> long.length){
+        //         long=n[i]
+        //     }
+        // }document.write(long)
+
+        for(let num of n){
+            if(num.length>long.length){
+                long=num
+            }
+        }document.write(long)
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

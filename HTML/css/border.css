@@ -1,0 +1,18 @@
+.sub{
+    border-style: groove;
+    border-width: 10px;
+    border-color: beige;
+    border-top: 5px solid green;
+    border-bottom: 9px solid gray;
+    border-left:2px solid blue ;
+    border-right: 3px dashed red;
+    margin-top: 200px;
+    margin-bottom: 7px;
+    margin-left: 110px;
+    margin-right: 400px;
+    padding-bottom: 90px;
+    padding-left: 110px;
+    padding-right: 150px;
+    padding-top: 140px;
+
+}

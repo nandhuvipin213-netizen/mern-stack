@@ -1,0 +1,22 @@
+p{
+    color: black;
+}
+.title{
+    color: aqua;
+}
+.cont{
+    color: bisque;
+}
+#main{
+    color: blueviolet;
+}
+h4,h5{
+    color: cadetblue;
+}
+*{
+    color: blueviolet;background-color: blue;
+}
+div p{
+    color: brown;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 80px;
+            height: 100px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        hloo 
+    </div>
+
+    <button onclick="handle()">click</button>
+    <p id="one">hiii</p>
+    <button id="end">click</button>
+
+    <script>
+
+        let text=document.getElementById("box")
+        text.addEventListener("click",function(event){
+            event.target.style.backgroundColor="green"
+            event.target.textContent="world"
+        })
+        text.addEventListener("mouseover",function(event){
+            event.target.style.backgroundColor="yellow"
+            event.target.textContent="hloo world"
+        })
+        text.addEventListener("mouseout",function(event){
+            event.target.style.backgroundColor="red"
+            event.target.textContent="byyy"
+        })
+
+        function handle(){
+            document.getElementById("one").innerHTML="tttt"
+
+        }
+        end.addEventListener("click",function(event){
+            alert("danger")
+        })
+
+        
+    </script>
+</body>
+</html>

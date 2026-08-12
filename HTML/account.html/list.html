@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: rgb(150, 59, 230);
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            background-color: white;
+            width: 100%;
+            height: 150px;
+            border-collapse: collapse;
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(188, 234, 53);
+        }
+        tbody tr:nth-child(even){
+            background-color:wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <table border="1px">
+                <thead style="background-color: blue;">
+                    <tr>
+                    <td>NAME</td>
+                    <td>SKILS</td>
+                    <td>STATUS</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ansal</th>
+                        <td>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <th>Active</th>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>Rahul</th>
+                        <td>
+                            <ul>
+                                <li>React</li>
+                                <li>Nod.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </td>
+                        <td>Pending</th>
+                    </tr>
+              
+                    <tr>
+                        <td>Meera</th>
+                        <td>
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>MYSQL</li>
+                            </ul>
+                        </td>
+                        <td>active</td>
+                    </tr>
+                  </tbody>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>

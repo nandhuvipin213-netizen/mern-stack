@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+        h2{
+            font-size: medium;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+
+        }
+        .sub{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .ani{
+            animation: bounce 2s infinite alternate;
+        }
+        @keyframes bounce{
+            0%, 100%{transform: translateY(0px);}
+            50%{transform: translateY(-15px);}
+        }
+        .c{
+            box-shadow: 0px 0px 8px green;
+        }
+        @media(max-width:700px){
+            .sub{
+                display: flex;
+                flex-direction: column;
+            }
+            .c{
+                background-color: aliceblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>Tech store</h1>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="main">
+     <div>
+        <h1>Smart Phone Pro</h1>
+        <h2>Stay connected,track your daily task</h2>
+        <button>Buy Now</button>
+     </div>
+     <div class="ani">
+        <img width="300px" height="300px" src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/e/k/9/-original-imahhyzhxwsdmcgq.jpeg?q=90" alt="">
+     </div>
+     
+        
+    </div>
+    <div class="sub">
+        <div class="c"><img width="200px" height="200px" src="https://m.media-amazon.com/images/I/61EclBYcocL._AC_UF1000,1000_QL80_.jpg" alt=""></div>
+        <div class="c"><img width="200px" height="200px" src="https://ptron.in/cdn/shop/products/B07XL8HFNC.MAIN.jpg?v=1667656208" alt=""></div>
+        <div class="c"><img width="200px" height="200px" src="https://m.media-amazon.com/images/I/61X4QKSqHKL.jpg" alt=""></div>
+        <div class="c"><img width="200px" height="200px" src="https://simpatico.co.uk/wp-content/uploads/2025/09/iPhone-17-Lavender.jpg" alt=""></div>
+        <div class="c"><img width="200px" height="200px" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRYVPIlnqTKEwrUFhROpKPVv_OIOt8akjNJgieRDnIO0Mw5SkBc0Lbm6GQ8Tii-pWZcXSRSGlw5Sbozn0kxjfHlILeSsvDbYuYs9nu_bf7AedtgiPQK6yuENR3j" alt=""></div>
+        
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .first{
+            perspective: 1000px;
+            width: 300px;
+            height: 400px;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            cursor: pointer;
+            
+        }
+        .front,.back{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            position: absolute;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 0 10px 25px yellow(0,0,0,0.2);
+        }
+        .front img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .back{
+            background: linear-gradient(135deg, green, blue);
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+        .card:hover .first{
+            transform: rotateY(180deg);
+        }
+        .card{
+            perspective: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="first">
+            <div class="front">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBymIfzpM6IvBcd5dWeda7JN-Nnm6HzXdxbw&s" alt="">
+            </div>
+            <div class="back">
+                <h1>name</h1>
+                <h2>developer</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type=" text" placeholder="ente a number1" id="num1"><br>
+    <input type="text" placeholder="enter a number2" id="num2"><br>
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+
+    <h2 id="result"></h2>
+    <script>
+        function add(){
+            let a=parseInt(document.getElementById("num1").value)
+            let b=parseInt(document.getElementById("num2").value)
+            let res=a+b
+            document.getElementById("result").innerHTML=res
+        }
+
+        function sub(){
+            let a=parseInt(document.getElementById("num1").value)
+            let b=parseInt(document.getElementById("num2").value)
+            let res=a-b
+            document.getElementById("result").innerHTML=res
+        }
+
+        function mul(){
+            let a=parseInt(document.getElementById("num1").value)
+            let b=parseInt(document.getElementById("num2").value)
+            let res=a*b
+            document.getElementById("result").innerHTML=res
+        }
+
+        function div(){
+            let a=parseInt(document.getElementById("num1").value)
+            let b=parseInt(document.getElementById("num2").value)
+            let res=a/b
+            document.getElementById("result").innerHTML=res
+        }
+
+    </script>
+</body>
+</html>

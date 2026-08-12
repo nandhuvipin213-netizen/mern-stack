@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="pic" src="https://uploads.sitepoint.com/wp-content/uploads/2016/03/1458289957powerful-images3.jpg" alt="">
+    <button id="two">hide</button>
+
+    <script>
+        let text=document.getElementById("two")
+        text.addEventListener("click",function(event){
+        if(pic.style.visibility==="hidden"){
+            text.textContent="hide"
+            pic.style.visibility="visible"
+        }else{
+            text.textContent="show"
+            pic.style.visibility="hidden"
+        }
+        })
+    </script>
+</body>
+</html>

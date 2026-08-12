@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function decleration
+        function ann(){   //parameters //function is a reusable group of code
+            document.write("hloooo",'<br>')
+        }
+        ann()//argument
+
+        function singleparameters(mm){
+            document.write(mm*mm)
+        }
+        singleparameters(6)
+        document.write('<br>')
+
+        function multipleparameters(n,b){
+            document.write(n+b)
+        }
+        multipleparameters(9,5)
+         document.write('<br>')
+
+
+        function multipleparameter(v,d,e){
+            document.write(v*d+e)
+        }
+        multipleparameter(2,3,9)
+         document.write('<br>')
+
+         //function expression
+
+        const aa=(y,z)=>{
+            document.write(y/z)
+        }
+        aa(8,6)
+         document.write('<br>')
+           
+         const sub=(a,b)=>{
+            document.write(a-b)
+         }
+         sub(5,7)
+         document.write('<br>')
+           
+         const mul=(e,r)=>{
+            document.write(e*r)
+         }
+         mul(3,6)
+         document.write('<br>')
+           
+         
+         //anonymus function
+         const helo= function(){
+            document.write("hiiii")
+
+         }
+         helo()
+         document.write('<br>')
+           
+         const wel=function hloooo(){
+            document.write("kkkk")
+         }
+         wel()
+         document.write('<br>')
+           
+         function even(b){
+            if(b%2==0){
+                document.write("even")
+            }else{
+                document.write("odd")
+            }
+         }
+         even(7)
+         document.write('<br>')
+           
+
+         function divisible(h){
+            if(h%3==0 && h%7==0){
+                document.write("yes")
+            }else{
+                document.write("no")
+            }
+         }
+         divisible(21)
+
+         
+    </script>
+</body>
+</html>

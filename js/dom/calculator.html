@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 650px;
+        }
+        .main{
+            width: 300px;
+            height: 400px;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            padding-left: 30px;
+        }
+        #input{
+            width: 270px;
+            height: 50px;
+            margin-top: 40px;
+        }
+     
+        .but{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            width: 60px;
+            height: 30px;
+            padding-top: 30px;
+
+        }
+        button{
+            width: 50px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="text" id="input" disabled>
+        <div class="but">
+            <button onclick="calear('c')">c</button>
+            <button onclick="appendvalue('/')">/</button>
+            <button onclick="appendvalue('*')">*</button>
+            <button onclick="appendvalue('-')">-</button>
+
+            <button onclick="appendvalue('7')">7</button>
+            <button onclick="appendvalue('8')">8</button>
+            <button onclick="appendvalue('9')">9</button>
+            <button onclick="appendvalue('+')">+</button>
+
+         
+            <button onclick="appendvalue('4')">4</button>
+            <button onclick="appendvalue('5')">5</button>
+            <button onclick="appendvalue('6')">6</button>
+            <button onclick="sum('')">=</button>
+         
+
+         
+            <button onclick="appendvalue('1')">1</button>
+            <button onclick="appendvalue('2')">2</button>
+            <button onclick="appendvalue('3')">3</button>
+            <button onclick="appendvalue('0')">0</button>
+        
+
+        </div>
+        
+    </div>
+    <script>
+        let display=document.getElementById('input')
+        function appendvalue(value){
+            input.value+=value
+        }
+        function calear(value){
+            input.value=""
+        }
+        function sum(value){
+            try{
+                input.value=eval(input.value)
+            }catch(error){
+                input.value=error
+            }
+        }
+
+    </script>
+</body>
+</html>

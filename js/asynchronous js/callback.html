@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="main"></h1>
+    <script>
+        function hloo(callback){
+            console.log("heloo");
+            callback()
+            
+        }
+        function great(){
+            console.log("welcome");
+            
+        }
+        hloo(great)
+
+        // dfghj
+
+        //   console.log("loading");
+        // setTimeout(()=>{
+        //     console.log('data loading');   
+        // },3000)
+
+        // 2
+        // console.log("counter");
+        // setTimeout(() => {
+        //     console.log("5");
+        //     setTimeout(()=>{
+        //         console.log(4);
+                
+        //     },1000)
+        //       setTimeout(()=>{
+        //         console.log(3);
+                
+        //       },1000)
+        //        setTimeout(() => {
+        //         console.log(2);
+                
+        //        },1000);
+        //        setTimeout(() => {
+        //         console.log(1);
+                
+        //        },1000);
+            
+        // },1000);
+
+
+       
+        // setTimeout(() => {
+        //     console.log("file downloading completed ");
+            
+        // }, 4000);
+        //  console.log("file downloading ");
+
+        //  setTimeout(() => {
+        //     console.log("insert the card");
+        //     setTimeout(() => {
+        //         console.log("enter pin");
+        //         setTimeout(() => {
+        //             console.log("take your card");
+                    
+                    
+        //         }, 2000);
+                
+        //     }, 2000);
+            
+        //  }, 2000);
+
+
+
+         sum(browser,9,5)
+         function sum(callback,b,d){
+            let result=b+d
+            callback(result)
+         }
+         function browser(result){
+
+            document.getElementById("main").textContent=result
+         }
+
+         login(dashboard,abhi)
+         function login(callback){
+            console.log("login");
+            setTimeout(() => {
+                console.log("login successfull");
+                callback()
+            }, 3000); 
+         }
+         function dashboard(){
+                console.log("welcome dashboard");
+                
+            }
+
+
+            
+        
+      
+    </script>
+</body>
+</html>

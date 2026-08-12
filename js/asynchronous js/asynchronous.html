@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("start");
+        console.log("mern stack");
+        console.log("End");
+
+        console.log("Start");
+        for(i=1;i<=50;i++){
+            console.log(i);
+            
+        }
+        console.log("end");
+
+        console.log("start");
+        setTimeout(()=>{
+            console.log("hloo ");
+            
+        },2000)
+        console.log("end");
+
+        console.log("1");
+        setTimeout(()=>{
+            console.log("2");
+            
+        },0)
+        console.log(3);
+
+         let one=setInterval(()=>{
+            console.log("hii");
+
+            
+        },2000)
+        console.log("end");
+        clearInterval(one)
+        
+
+
+        setInterval(()=>{
+            let date= new Date()
+            console.log(date.toLocaleTimeString());
+            
+        },2000)
+        console.log("end");
+
+        let id= setInterval(()=>{
+            console.log("running");
+            
+        },2000)
+        setTimeout(()=>{
+            clearInterval(id)
+            console.log("stop");
+            
+        },3000)
+
+
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="handleClick()">Add task</button>
+    <ul id="content"></ul>
+
+    <script>
+          let arr=[]
+        function handleClick(){
+          
+            let value=document.getElementById("input").value
+            arr.push(value)
+            console.log(arr);
+            
+            display()
+        }
+        function display(){
+            let one=""
+
+            one+= arr.map((item,index)=>(
+                `
+                <li>${item}
+                    <button onclick="Edite(${index})">Edite</button>
+                    <button onclick="dl(${index})">Delete</button>
+                    
+                    </li>`
+                   
+                    
+            )) 
+            // console.log(item);
+               document.getElementById("content").innerHTML=one
+        }
+
+        function dl(one){
+            arr.splice(one,1)
+            display()
+        }
+     
+        
+    </script>
+</body>
+</html>

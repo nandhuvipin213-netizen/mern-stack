@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            name: "abin",
+            age: 23,
+            course: "Mern stack"
+        };
+        document.write(JSON.stringify(student))
+        document.write('<br>')
+        document.write(student.name)
+         document.write('<br>')
+        document.write(student["age"])
+         document.write('<br>')
+
+        student.city="uk"
+        document.write(student)
+        document.write('<br>')
+
+        student.age=26
+        document.write(student)
+
+        delete student.age
+        document.write(student)
+        document.write('<br>')
+        document.write(JSON.stringify(student))
+         document.write('<br>')
+
+
+        let student1={
+            name:"nivin",
+
+            address:{
+                city:"kochi",
+                state:"kerala"
+            }
+        };document.write(student1.address.city)
+         document.write('<br>')
+         document.write(student1.name)
+         document.write('<br>')
+         document.write(student1.address.city)
+         document.write('<br>')
+         document.write(student1.state)
+         document.write('<br>')
+
+         let person={
+            name: "who",
+            age: 28,
+            addressL:"mn,building"
+         };
+         let newperson={
+            ...person,
+            cityt: "kochi",
+            place: "vennala"
+         }; document.write(newperson)
+         document.write('<br>')
+          document.write(JSON.stringify(newperson))
+            document.write('<br>')
+
+         let bike={
+            brand:"RL",
+            model: "GT",
+            year:2024
+         };
+         for(let one in bike){
+            document.write(one,bike[one],'<br>')
+         }
+        // document.write(JSON.stringify(one))
+          document.write('<br>')
+
+        let user={
+            name:"of",
+            age: 12
+        };document.write(Object.keys(user));
+        console.log(Object.keys(user))
+        console.log(Object.keys(user).length,'<br>')
+        document.write('<br>')
+        if("brand" in user){
+            document.write("true")
+        }else{
+            document.write("no")
+        }
+         document.write('<br>')
+        let man={
+            name1:"we",
+            age1:50   
+        }
+        let women={
+            name:"she",
+            age:30
+        }
+        let details={
+            ...man,
+            ...women,
+            city:"alappuzha",
+            state:"Tamil"
+        };
+        document.write(JSON.stringify(details))
+        document.write('<br>')
+
+        let student3={
+            albin:12,
+            nivin: 20,
+            bunny:76
+        }
+        high=0
+        let name=""
+        for(let key in student3){
+            if(student3[key]>high){
+               high=student3[key]
+                name=key
+
+            }
+            
+        }document.write(high,name)
+
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pokemon" placeholder="pookie">
+    <button onclick="pokiemon()">click</button>
+    <h2 id="name"></h2>
+    <img id="img">
+    <ul id="list"></ul>
+
+    <script>
+        async function pokiemon() {
+            try{
+
+                let name=document.getElementById("pokemon").value.toLowerCase()
+                let response=await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
+                
+                if(!response.ok){
+                    throw new Error("failed")
+                }
+                let user=await response.json()
+
+
+                document.getElementById("name").innerHTML=user.name
+                document.getElementById("img").src=user.sprites.front_default
+            }catch(error){
+                console.log("error",error);
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

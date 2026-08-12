@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+        }
+        #menu-check{
+            display: none;
+        }
+        .check{
+            display: none;
+        }
+        
+        .sub{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: aqua;
+            height: 400px;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            gap: 200px;
+        }
+        .con{
+            border: 1px solid black;
+            border-radius: 11px;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+@media(max-width:780px){
+            nav ul{
+                display: none;
+                flex-direction: column;
+                background-color: black;
+                position: absolute;
+                width: 500px;
+
+            }
+            #menu-check:checked+.check+ul{
+                display: flex;
+            }
+            .check{
+                display: block;
+            }
+            .content{
+                flex-direction: column;
+                height: 4%;
+                width: 100px;
+            }
+            .con{
+                width: 250px;
+                height: 100px;
+            }
+
+             
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>My site</h1>
+        </div>
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="check">&#9776;</label>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>portel</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ul>
+    </nav>
+    <div class="sub">
+        <h1>Welcone to our Website</h1><br>
+        <button>GET Started</button>
+    </div>
+    <div class="content">
+        <div class="con">Web design</div>
+        <div class="con">development</div>
+        <div class="con">SEO</div>
+        <div class="con">support</div>
+    </div>
+</body>
+</html>
