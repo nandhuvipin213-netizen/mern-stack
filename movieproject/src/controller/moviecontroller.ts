@@ -3,14 +3,14 @@ import type {Request,Response} from "express"
 import type{ movie } from "../types/movie.js"
 import { movies } from "../models/moviemodel.js"
 
-export const getmovie=(req:Request,res:Response)=>{
-    const filteredmovive=movies.filter(movie =>movie.rating >4)
-    if(filteredmovive.length>4){
-    res.status(202).json({message:"movie found",movies:filteredmovive})
-    }else{
-        res.status(404).json({message:"movie not found"})
-    }
-}
+// export const getmovie=(req:Request,res:Response)=>{
+//     const filteredmovive=movies.filter(movie =>movie.rating >4)
+//     if(filteredmovive.length>4){
+//     res.status(202).json({message:"movie found",movies:filteredmovive})
+//     }else{
+//         res.status(404).json({message:"movie not found"})
+//     }
+// }
 
 export const getmoviee=(req:Request,res:Response)=>{
     res.status(202).json({message:"movie",movies})

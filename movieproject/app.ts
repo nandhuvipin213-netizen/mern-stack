@@ -3,6 +3,9 @@ import movieroute from './src/routes/movieroute.js'
 const app:Application=express()
 
 app.use(express.json())
+app.get("/", (req, res) => {
+  res.send("Server is working");
+})
 app.use("/api",movieroute)
 
 
